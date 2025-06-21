@@ -41,12 +41,12 @@ export const getPayloadClient = async ({
   if (cached.client) {
     return cached.client
   }
-
+//hello@joshtriedcoding.com
   if (!cached.promise) {
     cached.promise = payload.init({
       email: {
         transport: transporter,
-        fromAddress: 'hello@joshtriedcoding.com',
+        fromAddress: 'onboarding@resend.dev',
         fromName: 'DigitalHippo',
       },
       secret: process.env.PAYLOAD_SECRET,
